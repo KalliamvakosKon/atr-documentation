@@ -6,3 +6,13 @@ body {
 .accordion {
   margin-bottom: 10px;
 }
+
+#btnBackToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border-radius: 50%;
+}
