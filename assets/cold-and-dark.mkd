@@ -1,0 +1,297 @@
+---
+title: Cold and Dark
+category: ATR Checklists
+authors:
+    - Konstantinos Kalliamvakos
+date: 2023-01-05
+---
+
+## Overhead Panel Setup
+
+![BAT master: ON](img/bat_master_on.png)
+
+1. Set BAT master: ON
+
+![EXT PWR: ON](img/ext_pwr_off.png)
+
+2. Set EXT PWR: ON
+
+![STBY COMPASS & STORM: OFF](img/stby_compass_storm_off.png)
+
+3. Check STORM: OFF
+4. Check STBY COMPASS: OFF
+5. Check CAPT WIPER: OFF
+
+![MIN CAB LT: OFF](img/min_cab_lt_off.png)
+
+6. Check MIN CAB LT: OFF
+
+![ DOME LT: DIM](img/dome_lt_dim.png)
+
+7. Check DOME LT: DIM
+
+![ENG pumps](img/eng_pumps.png)
+
+8. Set ENG 1 pump: RUN
+9. Check FEED LO PR: OFF
+10. Set ENG 1 pump: OFF
+11. Repeat for ENG 2
+12. Set X FEED: --
+13. Set ENG 1 pump: RUN
+14. Check **both** FEED LO PR: OFF
+15. Set ENG 1 pump: OFF
+16. Repeat for ENG 2
+17. Set X FEED: |
+
+![TLU: AUTO](img/tlu_auto.png)
+
+18. Check LDG GREAT: 3 Green
+19. Check TLU: AUTO
+20. Check MFC: No FAULT light
+
+![ENG1 Test](img/eng1_test.png)
+
+21. Set ENG 1 FIRE/FAULT TEST: FAULT TEST
+22. Check LOOPA LOOPB: FAULT light
+23. Set ENG 1 FIRE/FAULT TEST: FIRE TEST
+24. Press SQUIB TEST
+25. Check AGENT1 AGENT2: SQUIB light
+
+![EXT lights](img/ext_lights.png)
+
+26. Check BEACON light: OFF
+27. Check NAV light: ON
+28. Check STROBE light: OFF
+29. Check LOGO light: ON
+30. Check LAND L & R lights: OFF
+31. Check TAXI light: OFF
+32. Check WING light: OFF
+
+![HYD PWR](img/hyd_pwr.png)
+
+33. Set BLUE PUMP: ON
+34. Set AUX PUMP: ON
+35. Set GREEN PUMP: ON
+
+![PROP BRAKE: ON](img/prop_brake_on.png)
+
+36. Open PROP BRAKE guard
+37. Set PROP BRAKE: ON
+38. Check PROP BRK light: ON
+39. Check ENG START: OFF
+
+![DC GEN1/GEN2/UTLY](img/dc_gen1_gen2_utly.png)
+
+40. Set DC GEN1: ON
+41. Set DC GEN2: ON
+42. Set DC SVCE UTLY BUSS: ON
+
+![CVR test](img/cvr_test.png)
+
+43. Press CVR TEST
+
+![SIGNS](img/signs.png)
+
+44. Set SEAT BELTS light: ON
+45. Set EMER EXIT LT light: ON
+
+![WINDSHIELD HTG](img/windshield_htg.png)
+
+46. Set WINDSHIELD HTG L&R: ON
+
+![AC WILD ELEC PWR](img/ac_wild_elec_pwr.png)
+
+47. Set ACW GEN 1: ON
+48. Set ACW GEN 2: ON
+
+![ANN LT](img/ann_lt.png)
+
+49. Set ANN LT: TEST
+50. Check overhead lights: No fault lights
+51. Set ANN LT: BRT
+
+![OXYGEN MAIN SUPPLY](img/oxygen_main_supply.png)
+
+52. Set OXYGEN MAIN SUPPLY: ON
+
+![SMK TEST](img/smk_test.png)
+
+53. Press SMK TEST
+
+![EXHAUST MODE](img/exhaust_mode.png)
+
+54. Set EXHAUST MODE: ON
+
+![ENG2 Test](img/eng2_test.png)
+
+55. Set ENG 2 FIRE/FAULT TEST: FAULT TEST
+56. Check LOOPA LOOPB: FAULT light
+57. Set ENG 2 FIRE/FAULT TEST: FIRE TEST
+58. Press SQUIB TEST
+59. Check AGENT1 AGENT2: SQUIB light
+
+## Central Pedestal Setup
+
+![ATPCS TEST](img/atpcs_test.png)
+
+1. Set ATPCS TEST: ARM (ENG 1)
+
+![ATPCS light](img/atpcs_light.png)
+
+2. Check ATPCS light: Green
+3. Set ATPCS TEST: ENG 1
+4. Check indications
+5. Repeat for ENG 2
+
+![Cockpit lights](img/cockpit_lights.png)
+
+6. Adjust cockpit lights: AS REQUIRED
+
+![](img/clear_ewd.png)
+
+7. Click clear on CLR
+
+![IDLE GATE](img/idle_gate.png)
+
+8. Check IDLE GATE: Pulled
+
+![LEVERS](img/levers.png)
+
+9.  Check Parking brake: SET
+10. Check GUST LOCK: ENGAGED
+11. Check Power lever 1&2: GROUND IDLE
+12. Check Condition levers 1&2: FUEL SO
+13. Check Flaps: 0
+
+![WEATHER TILT](img/weather_tilt.png)
+
+14. Set WEATHER RADAR: SBY
+15. Set WEATHER TILT: + 15 degrees
+
+![PWR MGT](img/pwr_mgt.png)
+
+16. Set PWR MGT: TO
+
+![CABIN PRESS](img/cabin_press.png)
+
+17. Set LANDING ELEV: AS REQUIRED
+
+## FGCP Setup
+
+![NAV SOURCE](img/fgcp.png)
+
+1. Set COURSE heading: Departure runway
+2. Set departure altitude
+3. Set HDG: Departun runway
+
+![BRG](img/brg.png)
+
+4. Press BRG 1
+5. Press BRG 2
+
+## MCDU Setup
+
+1. Select POS INIT
+2. Select GPS POS
+3. Enter in INIT POS
+4. Select RETURN
+5. Select FPLN INIT
+6. Select ROUTE
+7. Enter FLT ID
+8. Enter FROM/TO
+9. Press EXEC
+10. Select departure
+11. Select departure runway
+12. Select SID
+13. Press EXEC
+14. Select arrival
+15. Select arrival runway
+16. Select STAR
+17. Press EXEC
+18. Remove FPLN DISCONTINUITY
+19. Add remaining waypoints
+20. Press EXEC
+21. Select PERF
+22. Select PERF INIT
+23. Enter CRZ ALT
+24. Select WEIGHT
+25. Enter ZFW
+26. Enter FOB
+27. Select PERF
+28. Enter TRANS ALT
+29. Select CRUISE
+30. Enter MEANWIND
+31. Select APPROACH
+32. Enter TRANS ALT
+33. Enter QNH
+
+## Departure Briefing
+
+![NAV SOURCE](img/fgcp.png)
+
+1. Press HDG
+2. Press ALT twice: PITCH HOLD
+3. Press NAV: LNAV
+
+## Start Hotel mode
+
+![Service door](img/service_door.png)
+
+1. Check rear right service door: No UNLK light
+
+![ENG2 Pump](img/eng2_pump.png)
+
+2. Set ENG 2 pump: RUN
+3. Open PROP BRAKE guard
+
+![PROP BRAKE: ON](img/prop_brake_on.png)
+
+4. Set PROP BRAKE: ON
+5. Close PROP BRAKE guard
+6. Set ENG START: START A/START B/ START A&B
+7. Set START 2: ON
+8. Wait for ENGINE 2 NH% > 10%
+9. Set CONDITION LEVER 2: FTR
+10. Set ENG START: OFF
+
+![EXT PWR: OFF](img/ext_pwr_off.png)
+
+11. Set EXT PWR: OFF
+
+## Remove GPU, Close Doors
+
+1. Remove GPU
+2. Stow TAIL PROP
+3. Close MAIN DOOR
+
+## Confirm Takeoff Performance Data
+
+1. SELECT MFD PERF page
+2. Click CONF TRM T/O DATA
+3. Set T/O TRIM
+
+## Rotate Engine 2, Start Engine 1
+
+1. Set BEACON light: ON
+2. Set PROP BRAKE: OFF
+3. Wait for NP% > 10%
+4. Set CONDITION LEVER 2: AUTO
+5. Start Sequence ENG 1
+6. Set ENG START: OFF
+
+![TRU](img/tru.png)
+
+7. Press TRU
+8. Extinguish remaing white lights
+9. Press ANTISKID TEST button
+10. Set FLAPS
+
+## Before Taxi Checklist
+
+1. Use airplane checklist
+2. Remove CHOCKS
+3. Set TAXI light: ON
+4. Release parking brake
+5. Taxi
+6. Set SPEED auto
+7. Perform take off test
