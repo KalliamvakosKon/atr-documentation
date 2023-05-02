@@ -154,11 +154,11 @@
                     <div class="accordion" id="fuelPumpsTestAccordion">
                       <div class="accordion-item">
                         <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fuelPumpsTestAccordionCollapse" aria-controls="collapseOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#fuelPumpsTestAccordionCollapse" aria-controls="collapseOne">
                             Fuel Pumps Test
                           </button>
                         </h2>
-                        <div id="fuelPumpsTestAccordionCollapse" class="accordion-collapse collapse" data-bs-parent="#fuelPumpsTestAccordion">
+                        <div id="fuelPumpsTestAccordionCollapse" class="accordion-collapse collapse show" data-bs-parent="#fuelPumpsTestAccordion">
                           <div class="accordion-body">
                             <ul class="list-group">
                               <li class="list-group-item">
@@ -271,11 +271,11 @@
                     <div class="accordion" id="eng1and2TestAccordion">
                       <div class="accordion-item">
                         <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eng1and2TestAccordionCollapse" aria-controls="collapseOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#eng1and2TestAccordionCollapse" aria-controls="collapseOne">
                             ENG1/2 Fire Test
                           </button>
                         </h2>
-                        <div id="eng1and2TestAccordionCollapse" class="accordion-collapse collapse" data-bs-parent="#eng1and2TestAccordionAccordion">
+                        <div id="eng1and2TestAccordionCollapse" class="accordion-collapse collapse show" data-bs-parent="#eng1and2TestAccordionAccordion">
                           <div class="accordion-body">
                             <ul class="list-group">
                               <li class="list-group-item">
@@ -574,6 +574,211 @@
                       <div class="col-md-6">
                         <p>
                           <img src="../assets/img/exhaust_mode.png" class="img-fluid" alt="EXHAUST MODE">
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion" id="centralPedestalAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#centralPedestalAccordionCollapse" aria-controls="collapseOne">
+                Central Pedestal Setup
+              </button>
+            </h2>
+            <div id="centralPedestalAccordionCollapse" class="accordion-collapse collapse show" data-bs-parent="#centralPedestalAccordion">
+              <div class="accordion-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-md-6">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="adjustCockpitLtCheckbox">
+                        <label class="form-check-label" for="adjustCockpitLtCheckbox">Adjust cockpit lights: AS REQUIRED</label>
+                      </div>
+                      <div class="col-md-6">
+                        <p>
+                          <img src="../assets/img/cockpit_lights.png" class="img-fluid" alt="Cockpit lights">
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="accordion" id="atcpsTestAccordion">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#atcpsTestAccordionCollapse" aria-controls="collapseOne">
+                            ATCPS Test
+                          </button>
+                        </h2>
+                        <div id="atcpsTestAccordionCollapse" class="accordion-collapse collapse show" data-bs-parent="#atcpsTestAccordion">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                <div class="row align-items-center">
+                                  <div class="col-md-6">
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="atpcsTestEng1ArmCheckbox">
+                                        <label class="form-check-label" for="atpcsTestEng1ArmCheckbox">Set ATPCS TEST: ARM (ENG 1)</label>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="atpcsLtGreenCheckbox">
+                                        <label class="form-check-label" for="atpcsLtGreenCheckbox">Check ATPCS light: Green</label>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="atpcsTestEng1Checkbox">
+                                        <label class="form-check-label" for="atpcsTestEng1Checkbox">Set ATPCS TEST: ENG 1</label>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="checkIndicationsCheckbox">
+                                        <label class="form-check-label" for="checkIndicationsCheckbox">Check indications</label>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="repeatEng204Checkbox">
+                                        <label class="form-check-label" for="repeatEng204Checkbox">Repeat for ENG 2</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <p>
+                                      <img src="../assets/img/atpcs_test.png" class="img-fluid" alt="ATPCS TEST">
+                                    </p>
+                                    <p>
+                                      <img src="../assets/img/atpcs_light.png" class="img-fluid" alt="ATPCS light">
+                                    </p>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-md-6">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="clickClearCheckbox">
+                        <label class="form-check-label" for="clickClearCheckbox">Click CLEAR on PROC</label>
+                      </div>
+                      <div class="col-md-6">
+                        <p>
+                          <img src="../assets/img/clear_ewd.png" class="img-fluid" alt="CLEAR">
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-md-6">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="idleGatePulledCheckbox">
+                        <label class="form-check-label" for="idleGatePulledCheckbox">Check IDLE GATE: Pulled</label>
+                      </div>
+                      <div class="col-md-6">
+                        <p>
+                          <img src="../assets/img/idle_gate.png" class="img-fluid" alt="IDLE GATE">
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-md-6">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="checkParkingBrakeSetCheckbox">
+                            <label class="form-check-label" for="checkParkingBrakeSetCheckbox">Check Parking brake: SET</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="checkGustLockEngagedCheckbox">
+                            <label class="form-check-label" for="checkGustLockEngagedCheckbox">Check GUST LOCK: ENGAGED</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="checkpwrLever12GroundIdleCheckbox">
+                            <label class="form-check-label" for="checkpwrLever12GroundIdleCheckbox">Check Power lever 1&2: GROUND IDLE</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="checkConditionLevers12FuelSoCheckbox">
+                            <label class="form-check-label" for="checkConditionLevers12FuelSoCheckbox">Check Condition levers 1&2: FUEL SO</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="checkFlaps0Checkbox">
+                            <label class="form-check-label" for="checkFlaps0Checkbox">Check Flaps: 0</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <p>
+                          <img src="../assets/img/levers.png" class="img-fluid" alt="LEVERS">
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-md-6">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="weatherRadarSbyCheckbox">
+                            <label class="form-check-label" for="weatherRadarSbyCheckbox">Set WEATHER RADAR: SBY</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="weatherTilt15Checkbox">
+                            <label class="form-check-label" for="weatherTilt15Checkbox">Set WEATHER TILT: + 15 degrees</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <p>
+                          <img src="../assets/img/weather_tilt.png" class="img-fluid" alt="WEATHER TILT">
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-md-6">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="pwrMgtToCheckbox">
+                        <label class="form-check-label" for="pwrMgtToCheckbox">Set PWR MGT: TO</label>
+                      </div>
+                      <div class="col-md-6">
+                        <p>
+                          <img src="../assets/img/pwr_mgt.png" class="img-fluid" alt="PWR MGT">
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-md-6">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="landingElevCheckbox">
+                        <label class="form-check-label" for="landingElevCheckbox">Set LANDING ELEV: AS REQUIRED</label>
+                      </div>
+                      <div class="col-md-6">
+                        <p>
+                          <img src="../assets/img/cabin_press.png" class="img-fluid" alt="CABIN PRESS">
                         </p>
                       </div>
                     </div>
