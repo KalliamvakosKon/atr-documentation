@@ -7,6 +7,27 @@ body {
   margin-bottom: 10px;
 }
 
+nav[data-toggle="toc"] {
+  position: sticky;
+  top: 55px;
+	align-self: start;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+
+  nav[data-toggle="toc"] {
+    margin-bottom: 42px;
+    position: static;
+  }
+
+  nav[data-toggle='toc'] .nav .nav {
+    display: block;
+  }
+}
+
 #btnBackToTop {
   position: fixed;
   bottom: 20px;

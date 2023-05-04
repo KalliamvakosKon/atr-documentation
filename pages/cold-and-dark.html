@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cold and Dark</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"/>
     <link href="../assets/css/styles.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#toc">
     <div>
       <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
@@ -36,762 +37,769 @@
         </div>
       </nav>
       <div class="container-fluid" id="checklistContent">
-        <div class="accordion" id="overheadPanelAccordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#overheadPanelAccordionCollapse" aria-controls="collapseOne">
-                Overhead Panel Setup
-              </button>
-            </h2>
-            <div id="overheadPanelAccordionCollapse" class="accordion-collapse collapse show" data-bs-parent="#overheadPanelAccordion">
-              <div class="accordion-body">
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="batMasterOnCheckbox">
-                        <label class="form-check-label" for="batMasterOnCheckbox">Set BAT master: ON</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/bat_master_on.png" class="img-fluid" alt="BAT master: ON">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="extPwrOnCheckbox">
-                        <label class="form-check-label" for="extPwrOnCheckbox">Set EXT PWR: ON</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/ext_pwr_on.png" class="img-fluid" alt="EXT PWR: ON">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="annLtTestCheckbox">
-                            <label class="form-check-label" for="annLtTestCheckbox">Set ANN LT: TEST</label>
+        <div class="row">
+          <div class="col-md-10">
+            <div class="accordion" id="overheadPanelAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#overheadPanelAccordionCollapse" aria-controls="collapseOne">
+                    Overhead Panel Setup
+                  </button>
+                </h2>
+                <div id="overheadPanelAccordionCollapse" class="accordion-collapse collapse show" data-bs-parent="#overheadPanelAccordion">
+                  <div class="accordion-body">
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="batMasterOnCheckbox">
+                            <label class="form-check-label" for="batMasterOnCheckbox">Set BAT master: ON</label>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/bat_master_on.png" class="img-fluid" alt="BAT master: ON">
+                            </p>
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="overheadLtOnCheckbox">
-                            <label class="form-check-label" for="overheadLtOnCheckbox">Check overhead lights: All indications on</label>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="extPwrOnCheckbox">
+                            <label class="form-check-label" for="extPwrOnCheckbox">Set EXT PWR: ON</label>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/ext_pwr_on.png" class="img-fluid" alt="EXT PWR: ON">
+                            </p>
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="annLtBrtCheckbox">
-                            <label class="form-check-label" for="annLtBrtCheckbox">Set ANN LT: BRT</label>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="annLtTestCheckbox">
+                                <label class="form-check-label" for="annLtTestCheckbox">Set ANN LT: TEST</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="overheadLtOnCheckbox">
+                                <label class="form-check-label" for="overheadLtOnCheckbox">Check overhead lights: All indications on</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="annLtBrtCheckbox">
+                                <label class="form-check-label" for="annLtBrtCheckbox">Set ANN LT: BRT</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/ann_lt.png" class="img-fluid" alt="ANN LT">
+                            </p>
                           </div>
                         </div>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/ann_lt.png" class="img-fluid" alt="ANN LT">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="checkStormOffCheckbox">
-                            <label class="form-check-label" for="checkStormOffCheckbox">Check STORM: OFF</label>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="checkStormOffCheckbox">
+                                <label class="form-check-label" for="checkStormOffCheckbox">Check STORM: OFF</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="checkStbyCompOffCheckbox">
+                                <label class="form-check-label" for="checkStbyCompOffCheckbox">Check STBY COMPASS: OFF</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="checkCaptWipOffCheckbox">
+                                <label class="form-check-label" for="checkCaptWipOffCheckbox">Check CAPT WIPER: OFF</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/stby_compass_storm_off.png" class="img-fluid" alt="STBY COMPASS & STORM: OFF">
+                            </p>
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="checkStbyCompOffCheckbox">
-                            <label class="form-check-label" for="checkStbyCompOffCheckbox">Check STBY COMPASS: OFF</label>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="minCabLtOffCheckbox">
+                            <label class="form-check-label" for="minCabLtOffCheckbox">Check MIN CAB LT: OFF</label>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/min_cab_lt_off.png" class="img-fluid" alt="MIN CAB LT: OFF">
+                            </p>
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="checkCaptWipOffCheckbox">
-                            <label class="form-check-label" for="checkCaptWipOffCheckbox">Check CAPT WIPER: OFF</label>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="domeLtDimCheckbox">
+                            <label class="form-check-label" for="domeLtDimCheckbox">Check DOME LT: DIM</label>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/dome_lt_dim.png" class="img-fluid" alt="DOME LT: DIM">
+                            </p>
                           </div>
                         </div>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/stby_compass_storm_off.png" class="img-fluid" alt="STBY COMPASS & STORM: OFF">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="minCabLtOffCheckbox">
-                        <label class="form-check-label" for="minCabLtOffCheckbox">Check MIN CAB LT: OFF</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/min_cab_lt_off.png" class="img-fluid" alt="MIN CAB LT: OFF">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="domeLtDimCheckbox">
-                        <label class="form-check-label" for="domeLtDimCheckbox">Check DOME LT: DIM</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/dome_lt_dim.png" class="img-fluid" alt="DOME LT: DIM">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="accordion" id="fuelPumpsTestAccordion">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#fuelPumpsTestAccordionCollapse" aria-controls="collapseOne">
-                            Fuel Pumps Test
-                          </button>
-                        </h2>
-                        <div id="fuelPumpsTestAccordionCollapse" class="accordion-collapse collapse show" data-bs-parent="#fuelPumpsTestAccordion">
-                          <div class="accordion-body">
-                            <ul class="list-group">
-                              <li class="list-group-item">
-                                <div class="row align-items-center">
-                                  <div class="col-md-6">
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="eng1PumpRun01Checkbox">
-                                        <label class="form-check-label" for="eng1PumpRun01Checkbox">Set ENG 1 pump: RUN</label>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="accordion" id="fuelPumpsTestAccordion">
+                          <div class="accordion-item">
+                            <h3 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#fuelPumpsTestAccordionCollapse" aria-controls="collapseOne">
+                                Fuel Pumps Test
+                              </button>
+                            </h3>
+                            <div id="fuelPumpsTestAccordionCollapse" class="accordion-collapse collapse show" data-bs-parent="#fuelPumpsTestAccordion">
+                              <div class="accordion-body">
+                                <ul class="list-group">
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="eng1PumpRun01Checkbox">
+                                            <label class="form-check-label" for="eng1PumpRun01Checkbox">Set ENG 1 pump: RUN</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="feedLoPrOff01Checkbox">
+                                            <label class="form-check-label" for="feedLoPrOff01Checkbox">Check FEED LO PR: OFF</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="eng1PumpOff01Checkbox">
+                                            <label class="form-check-label" for="eng1PumpOff01Checkbox">Set ENG 1 pump: OFF</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="repeatEng201Checkbox">
+                                            <label class="form-check-label" for="repeatEng201Checkbox">Repeat for ENG 2</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="xFeedHorizontalCheckbox">
+                                            <label class="form-check-label" for="xFeedHorizontalCheckbox">Set X FEED: --</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="eng1PumpRun02Checkbox">
+                                            <label class="form-check-label" for="eng1PumpRun02Checkbox">Set ENG 1 pump: RUN</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="feedLoPrOff02Checkbox">
+                                            <label class="form-check-label" for="feedLoPrOff02Checkbox">Check <strong>both</strong> FEED LO PR: OFF</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="eng1PumpOff02Checkbox">
+                                            <label class="form-check-label" for="eng1PumpOff02Checkbox">Set ENG 1 pump: OFF</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="repeatEng202Checkbox">
+                                            <label class="form-check-label" for="repeatEng202Checkbox">Repeat for ENG 2</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="xFeedverticalCheckbox">
+                                            <label class="form-check-label" for="xFeedverticalCheckbox">Set X FEED: |</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/eng_pumps.png" class="img-fluid" alt="ENG pumps">
+                                        </p>
                                       </div>
                                     </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="feedLoPrOff01Checkbox">
-                                        <label class="form-check-label" for="feedLoPrOff01Checkbox">Check FEED LO PR: OFF</label>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="checkldgGearGreenCheckbox">
+                                <label class="form-check-label" for="ldgGearGreenCheckbox">Check LDG GEAR: 3 Green</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="checkTluAutoCheckbox">
+                                <label class="form-check-label" for="checkTluAutoCheckbox">Check TLU: AUTO</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="checkMfcNoFaultCheckbox">
+                                <label class="form-check-label" for="checkMfcNoFaultCheckbox">Check MFC: No FAULT light</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/tlu_auto.png" class="img-fluid" alt="TLU: AUTO">
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="accordion" id="eng1and2TestAccordion">
+                          <div class="accordion-item">
+                            <h3 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#eng1and2TestAccordionCollapse" aria-controls="collapseOne">
+                                ENG1/2 Fire Test
+                              </button>
+                            </h3>
+                            <div id="eng1and2TestAccordionCollapse" class="accordion-collapse collapse show" data-bs-parent="#eng1and2TestAccordionAccordion">
+                              <div class="accordion-body">
+                                <ul class="list-group">
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="eng1FaultTestCheckbox">
+                                            <label class="form-check-label" for="eng1FaultTestCheckbox">Set ENG 1 FIRE/FAULT TEST: FAULT TEST</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="checkLoopABCheckbox">
+                                            <label class="form-check-label" for="checkLoopABCheckbox">Check LOOP A LOOP B: FAULT light</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="eng1FireTestCheckbox">
+                                            <label class="form-check-label" for="eng1FireTestCheckbox">Set ENG 1 FIRE/FAULT TEST: FIRE TEST</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="pushSquibCheckbox">
+                                            <label class="form-check-label" for="pushSquibCheckbox">Push SQUIB TEST</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="checkAgent12Checkbox">
+                                            <label class="form-check-label" for="checkAgent12Checkbox">Check AGENT1 AGENT2: SQUIB light</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="repeatEng203Checkbox">
+                                            <label class="form-check-label" for="repeatEng203Checkbox">Repeat for ENG 2</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/eng1_test.png" class="img-fluid" alt="ENG1 Test">
+                                        </p>
                                       </div>
                                     </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="eng1PumpOff01Checkbox">
-                                        <label class="form-check-label" for="eng1PumpOff01Checkbox">Set ENG 1 pump: OFF</label>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="beaconLtOffCheckbox">
+                                <label class="form-check-label" for="beaconLtOffCheckbox">Check BEACON light: OFF</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="navLtOffCheckbox">
+                                <label class="form-check-label" for="navLtOffCheckbox">Check NAV light: ON</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="strobeLtOffCheckbox">
+                                <label class="form-check-label" for="strobeLtOffCheckbox">Check STROBE light: OFF</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="logoLtOffCheckbox">
+                                <label class="form-check-label" for="logoLtOffCheckbox">Check LOGO light: ON</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="landLtOffCheckbox">
+                                <label class="form-check-label" for="landLtOffCheckbox">Check LAND L & R lights: OFF</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="taxiLtOffCheckbox">
+                                <label class="form-check-label" for="taxiLtOffCheckbox">Check TAXI light: OFF</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="wingLtOffCheckbox">
+                                <label class="form-check-label" for="wingLtOffCheckbox">Check WING light: OFF</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/ext_lights.png" class="img-fluid" alt="EXT lights">
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="bluePumpOnCheckbox">
+                                <label class="form-check-label" for="bluePumpOnCheckbox">Set BLUE PUMP: ON</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="auxPumpOnCheckbox">
+                                <label class="form-check-label" for="auxPumpOnCheckbox">Set AUX PUMP: ON</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="greenPumpOnCheckbox">
+                                <label class="form-check-label" for="greenPumpOnCheckbox">Set GREEN PUMP: ON</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/hyd_pwr.png" class="img-fluid" alt="HYD PWR">
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="checkEngStartOffCheckbox">
+                                <label class="form-check-label" for="checkEngStartOffCheckbox">Check ENG START: OFF</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="propBrakeOnCheckbox">
+                                <label class="form-check-label" for="propBrakeOnCheckbox">Set PROP BRAKE: ON</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="propBrkLtOnCheckbox">
+                                <label class="form-check-label" for="propBrkLtOnCheckbox">Check PROP BRK light: ON</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="propBrakeOffCheckbox">
+                                <label class="form-check-label" for="propBrakeOffCheckbox">Set PROP BRAKE: OFF</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/prop_brake_on.png" class="img-fluid" alt="PROP BRAKE: ON">
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="dcGen1OnCheckbox">
+                                <label class="form-check-label" for="dcGen1OnCheckbox">Set DC GEN1: ON</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="dcGen2OnCheckbox">
+                                <label class="form-check-label" for="dcGen2OnCheckbox">Set DC GEN2: ON</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="dcSvceUtlyBussOnCheckbox">
+                                <label class="form-check-label" for="dcSvceUtlyBussOnCheckbox">Set DC SVCE UTLY BUSS: ON</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/dc_gen1_gen2_utly.png" class="img-fluid" alt="DC GEN1/GEN2/UTLY">
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="pushCvrTestCheckbox">
+                            <label class="form-check-label" for="pushCvrTestCheckbox">Push CVR TEST</label>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/cvr_test.png" class="img-fluid" alt="CVR test">
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="seatBeltsLtOnCheckbox">
+                                <label class="form-check-label" for="seatBeltsLtOnCheckbox">Set SEAT BELTS light: ON</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="emerExitLtOnCheckbox">
+                                <label class="form-check-label" for="emerExitLtOnCheckbox">Set EMER EXIT LT light: ON</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/signs.png" class="img-fluid" alt="SIGNS">
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="windshieldHtgOnCheckbox">
+                            <label class="form-check-label" for="windshieldHtgOnCheckbox">Set WINDSHIELD HTG L&R: ON</label>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/windshield_htg.png" class="img-fluid" alt="WINDSHIELD HTG">
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="acwGen12OnCheckbox">
+                            <label class="form-check-label" for="acwGen12OnCheckbox">Set ACW GEN 1&2: ON</label>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/ac_wild_elec_pwr.png" class="img-fluid" alt="AC WILD ELEC PWR">
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="oxygenMainSupplyOnCheckbox">
+                            <label class="form-check-label" for="oxygenMainSupplyOnCheckbox">Set OXYGEN MAIN SUPPLY: ON</label>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/oxygen_main_supply.png" class="img-fluid" alt="OXYGEN MAIN SUPPLY">
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="pushSmkTestCheckbox">
+                            <label class="form-check-label" for="pushSmkTestCheckbox">Push SMK TEST</label>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/smk_test.png" class="img-fluid" alt="SMK TEST">
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="exhaustModeOnCheckbox">
+                            <label class="form-check-label" for="exhaustModeOnCheckbox">Set EXHAUST MODE: ON</label>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/exhaust_mode.png" class="img-fluid" alt="EXHAUST MODE">
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion" id="centralPedestalAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#centralPedestalAccordionCollapse" aria-controls="collapseOne">
+                    Central Pedestal Setup
+                  </button>
+                </h2>
+                <div id="centralPedestalAccordionCollapse" class="accordion-collapse collapse show" data-bs-parent="#centralPedestalAccordion">
+                  <div class="accordion-body">
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="adjustCockpitLtCheckbox">
+                            <label class="form-check-label" for="adjustCockpitLtCheckbox">Adjust cockpit lights: AS REQUIRED</label>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/cockpit_lights.png" class="img-fluid" alt="Cockpit lights">
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="accordion" id="atcpsTestAccordion">
+                          <div class="accordion-item">
+                            <h3 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#atcpsTestAccordionCollapse" aria-controls="collapseOne">
+                                ATCPS Test
+                              </button>
+                            </h3>
+                            <div id="atcpsTestAccordionCollapse" class="accordion-collapse collapse show" data-bs-parent="#atcpsTestAccordion">
+                              <div class="accordion-body">
+                                <ul class="list-group">
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="atpcsTestEng1ArmCheckbox">
+                                            <label class="form-check-label" for="atpcsTestEng1ArmCheckbox">Set ATPCS TEST: ARM (ENG 1)</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="atpcsLtGreenCheckbox">
+                                            <label class="form-check-label" for="atpcsLtGreenCheckbox">Check ATPCS light: Green</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="atpcsTestEng1Checkbox">
+                                            <label class="form-check-label" for="atpcsTestEng1Checkbox">Set ATPCS TEST: ENG 1</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="checkIndicationsCheckbox">
+                                            <label class="form-check-label" for="checkIndicationsCheckbox">Check indications</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="repeatEng204Checkbox">
+                                            <label class="form-check-label" for="repeatEng204Checkbox">Repeat for ENG 2</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/atpcs_test.png" class="img-fluid" alt="ATPCS TEST">
+                                        </p>
+                                        <p>
+                                          <img src="../assets/img/atpcs_light.png" class="img-fluid" alt="ATPCS light">
+                                        </p>
                                       </div>
                                     </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="repeatEng201Checkbox">
-                                        <label class="form-check-label" for="repeatEng201Checkbox">Repeat for ENG 2</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="xFeedHorizontalCheckbox">
-                                        <label class="form-check-label" for="xFeedHorizontalCheckbox">Set X FEED: --</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="eng1PumpRun02Checkbox">
-                                        <label class="form-check-label" for="eng1PumpRun02Checkbox">Set ENG 1 pump: RUN</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="feedLoPrOff02Checkbox">
-                                        <label class="form-check-label" for="feedLoPrOff02Checkbox">Check <strong>both</strong> FEED LO PR: OFF</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="eng1PumpOff02Checkbox">
-                                        <label class="form-check-label" for="eng1PumpOff02Checkbox">Set ENG 1 pump: OFF</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="repeatEng202Checkbox">
-                                        <label class="form-check-label" for="repeatEng202Checkbox">Repeat for ENG 2</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="xFeedverticalCheckbox">
-                                        <label class="form-check-label" for="xFeedverticalCheckbox">Set X FEED: |</label>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                    <p>
-                                      <img src="../assets/img/eng_pumps.png" class="img-fluid" alt="ENG pumps">
-                                    </p>
-                                  </div>
-                                </div>
-                              </li>
-                            </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="checkldgGearGreenCheckbox">
-                            <label class="form-check-label" for="ldgGearGreenCheckbox">Check LDG GEAR: 3 Green</label>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="clickClearCheckbox">
+                            <label class="form-check-label" for="clickClearCheckbox">Click CLEAR on PROC</label>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/clear_ewd.png" class="img-fluid" alt="CLEAR">
+                            </p>
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="checkTluAutoCheckbox">
-                            <label class="form-check-label" for="checkTluAutoCheckbox">Check TLU: AUTO</label>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="idleGatePulledCheckbox">
+                            <label class="form-check-label" for="idleGatePulledCheckbox">Check IDLE GATE: Pulled</label>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/idle_gate.png" class="img-fluid" alt="IDLE GATE">
+                            </p>
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="checkMfcNoFaultCheckbox">
-                            <label class="form-check-label" for="checkMfcNoFaultCheckbox">Check MFC: No FAULT light</label>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="checkParkingBrakeSetCheckbox">
+                                <label class="form-check-label" for="checkParkingBrakeSetCheckbox">Check Parking brake: SET</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="checkGustLockEngagedCheckbox">
+                                <label class="form-check-label" for="checkGustLockEngagedCheckbox">Check GUST LOCK: ENGAGED</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="checkpwrLever12GroundIdleCheckbox">
+                                <label class="form-check-label" for="checkpwrLever12GroundIdleCheckbox">Check Power lever 1&2: GROUND IDLE</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="checkConditionLevers12FuelSoCheckbox">
+                                <label class="form-check-label" for="checkConditionLevers12FuelSoCheckbox">Check Condition levers 1&2: FUEL SO</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="checkFlaps0Checkbox">
+                                <label class="form-check-label" for="checkFlaps0Checkbox">Check Flaps: 0</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/levers.png" class="img-fluid" alt="LEVERS">
+                            </p>
                           </div>
                         </div>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/tlu_auto.png" class="img-fluid" alt="TLU: AUTO">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="accordion" id="eng1and2TestAccordion">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#eng1and2TestAccordionCollapse" aria-controls="collapseOne">
-                            ENG1/2 Fire Test
-                          </button>
-                        </h2>
-                        <div id="eng1and2TestAccordionCollapse" class="accordion-collapse collapse show" data-bs-parent="#eng1and2TestAccordionAccordion">
-                          <div class="accordion-body">
-                            <ul class="list-group">
-                              <li class="list-group-item">
-                                <div class="row align-items-center">
-                                  <div class="col-md-6">
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="eng1FaultTestCheckbox">
-                                        <label class="form-check-label" for="eng1FaultTestCheckbox">Set ENG 1 FIRE/FAULT TEST: FAULT TEST</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="checkLoopABCheckbox">
-                                        <label class="form-check-label" for="checkLoopABCheckbox">Check LOOP A LOOP B: FAULT light</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="eng1FireTestCheckbox">
-                                        <label class="form-check-label" for="eng1FireTestCheckbox">Set ENG 1 FIRE/FAULT TEST: FIRE TEST</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="pushSquibCheckbox">
-                                        <label class="form-check-label" for="pushSquibCheckbox">Push SQUIB TEST</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="checkAgent12Checkbox">
-                                        <label class="form-check-label" for="checkAgent12Checkbox">Check AGENT1 AGENT2: SQUIB light</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="repeatEng203Checkbox">
-                                        <label class="form-check-label" for="repeatEng203Checkbox">Repeat for ENG 2</label>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                    <p>
-                                      <img src="../assets/img/eng1_test.png" class="img-fluid" alt="ENG1 Test">
-                                    </p>
-                                  </div>
-                                </div>
-                              </li>
-                            </ul>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="weatherRadarSbyCheckbox">
+                                <label class="form-check-label" for="weatherRadarSbyCheckbox">Set WEATHER RADAR: SBY</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="weatherTilt15Checkbox">
+                                <label class="form-check-label" for="weatherTilt15Checkbox">Set WEATHER TILT: + 15 degrees</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/weather_tilt.png" class="img-fluid" alt="WEATHER TILT">
+                            </p>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="beaconLtOffCheckbox">
-                            <label class="form-check-label" for="beaconLtOffCheckbox">Check BEACON light: OFF</label>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="pwrMgtToCheckbox">
+                            <label class="form-check-label" for="pwrMgtToCheckbox">Set PWR MGT: TO</label>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/pwr_mgt.png" class="img-fluid" alt="PWR MGT">
+                            </p>
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="navLtOffCheckbox">
-                            <label class="form-check-label" for="navLtOffCheckbox">Check NAV light: ON</label>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="landingElevCheckbox">
+                            <label class="form-check-label" for="landingElevCheckbox">Set LANDING ELEV: AS REQUIRED</label>
+                          </div>
+                          <div class="col-md-6">
+                            <p>
+                              <img src="../assets/img/cabin_press.png" class="img-fluid" alt="CABIN PRESS">
+                            </p>
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="strobeLtOffCheckbox">
-                            <label class="form-check-label" for="strobeLtOffCheckbox">Check STROBE light: OFF</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="logoLtOffCheckbox">
-                            <label class="form-check-label" for="logoLtOffCheckbox">Check LOGO light: ON</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="landLtOffCheckbox">
-                            <label class="form-check-label" for="landLtOffCheckbox">Check LAND L & R lights: OFF</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="taxiLtOffCheckbox">
-                            <label class="form-check-label" for="taxiLtOffCheckbox">Check TAXI light: OFF</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="wingLtOffCheckbox">
-                            <label class="form-check-label" for="wingLtOffCheckbox">Check WING light: OFF</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/ext_lights.png" class="img-fluid" alt="EXT lights">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="bluePumpOnCheckbox">
-                            <label class="form-check-label" for="bluePumpOnCheckbox">Set BLUE PUMP: ON</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="auxPumpOnCheckbox">
-                            <label class="form-check-label" for="auxPumpOnCheckbox">Set AUX PUMP: ON</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="greenPumpOnCheckbox">
-                            <label class="form-check-label" for="greenPumpOnCheckbox">Set GREEN PUMP: ON</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/hyd_pwr.png" class="img-fluid" alt="HYD PWR">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="checkEngStartOffCheckbox">
-                            <label class="form-check-label" for="checkEngStartOffCheckbox">Check ENG START: OFF</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="propBrakeOnCheckbox">
-                            <label class="form-check-label" for="propBrakeOnCheckbox">Set PROP BRAKE: ON</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="propBrkLtOnCheckbox">
-                            <label class="form-check-label" for="propBrkLtOnCheckbox">Check PROP BRK light: ON</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="propBrakeOffCheckbox">
-                            <label class="form-check-label" for="propBrakeOffCheckbox">Set PROP BRAKE: OFF</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/prop_brake_on.png" class="img-fluid" alt="PROP BRAKE: ON">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="dcGen1OnCheckbox">
-                            <label class="form-check-label" for="dcGen1OnCheckbox">Set DC GEN1: ON</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="dcGen2OnCheckbox">
-                            <label class="form-check-label" for="dcGen2OnCheckbox">Set DC GEN2: ON</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="dcSvceUtlyBussOnCheckbox">
-                            <label class="form-check-label" for="dcSvceUtlyBussOnCheckbox">Set DC SVCE UTLY BUSS: ON</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/dc_gen1_gen2_utly.png" class="img-fluid" alt="DC GEN1/GEN2/UTLY">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="pushCvrTestCheckbox">
-                        <label class="form-check-label" for="pushCvrTestCheckbox">Push CVR TEST</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/cvr_test.png" class="img-fluid" alt="CVR test">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="seatBeltsLtOnCheckbox">
-                            <label class="form-check-label" for="seatBeltsLtOnCheckbox">Set SEAT BELTS light: ON</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="emerExitLtOnCheckbox">
-                            <label class="form-check-label" for="emerExitLtOnCheckbox">Set EMER EXIT LT light: ON</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/signs.png" class="img-fluid" alt="SIGNS">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="windshieldHtgOnCheckbox">
-                        <label class="form-check-label" for="windshieldHtgOnCheckbox">Set WINDSHIELD HTG L&R: ON</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/windshield_htg.png" class="img-fluid" alt="WINDSHIELD HTG">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="acwGen12OnCheckbox">
-                        <label class="form-check-label" for="acwGen12OnCheckbox">Set ACW GEN 1&2: ON</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/ac_wild_elec_pwr.png" class="img-fluid" alt="AC WILD ELEC PWR">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="oxygenMainSupplyOnCheckbox">
-                        <label class="form-check-label" for="oxygenMainSupplyOnCheckbox">Set OXYGEN MAIN SUPPLY: ON</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/oxygen_main_supply.png" class="img-fluid" alt="OXYGEN MAIN SUPPLY">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="pushSmkTestCheckbox">
-                        <label class="form-check-label" for="pushSmkTestCheckbox">Push SMK TEST</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/smk_test.png" class="img-fluid" alt="SMK TEST">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="exhaustModeOnCheckbox">
-                        <label class="form-check-label" for="exhaustModeOnCheckbox">Set EXHAUST MODE: ON</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/exhaust_mode.png" class="img-fluid" alt="EXHAUST MODE">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="accordion" id="centralPedestalAccordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#centralPedestalAccordionCollapse" aria-controls="collapseOne">
-                Central Pedestal Setup
-              </button>
-            </h2>
-            <div id="centralPedestalAccordionCollapse" class="accordion-collapse collapse show" data-bs-parent="#centralPedestalAccordion">
-              <div class="accordion-body">
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="adjustCockpitLtCheckbox">
-                        <label class="form-check-label" for="adjustCockpitLtCheckbox">Adjust cockpit lights: AS REQUIRED</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/cockpit_lights.png" class="img-fluid" alt="Cockpit lights">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="accordion" id="atcpsTestAccordion">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#atcpsTestAccordionCollapse" aria-controls="collapseOne">
-                            ATCPS Test
-                          </button>
-                        </h2>
-                        <div id="atcpsTestAccordionCollapse" class="accordion-collapse collapse show" data-bs-parent="#atcpsTestAccordion">
-                          <div class="accordion-body">
-                            <ul class="list-group">
-                              <li class="list-group-item">
-                                <div class="row align-items-center">
-                                  <div class="col-md-6">
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="atpcsTestEng1ArmCheckbox">
-                                        <label class="form-check-label" for="atpcsTestEng1ArmCheckbox">Set ATPCS TEST: ARM (ENG 1)</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="atpcsLtGreenCheckbox">
-                                        <label class="form-check-label" for="atpcsLtGreenCheckbox">Check ATPCS light: Green</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="atpcsTestEng1Checkbox">
-                                        <label class="form-check-label" for="atpcsTestEng1Checkbox">Set ATPCS TEST: ENG 1</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="checkIndicationsCheckbox">
-                                        <label class="form-check-label" for="checkIndicationsCheckbox">Check indications</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="repeatEng204Checkbox">
-                                        <label class="form-check-label" for="repeatEng204Checkbox">Repeat for ENG 2</label>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                    <p>
-                                      <img src="../assets/img/atpcs_test.png" class="img-fluid" alt="ATPCS TEST">
-                                    </p>
-                                    <p>
-                                      <img src="../assets/img/atpcs_light.png" class="img-fluid" alt="ATPCS light">
-                                    </p>
-                                  </div>
-                                </div>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="clickClearCheckbox">
-                        <label class="form-check-label" for="clickClearCheckbox">Click CLEAR on PROC</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/clear_ewd.png" class="img-fluid" alt="CLEAR">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="idleGatePulledCheckbox">
-                        <label class="form-check-label" for="idleGatePulledCheckbox">Check IDLE GATE: Pulled</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/idle_gate.png" class="img-fluid" alt="IDLE GATE">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="checkParkingBrakeSetCheckbox">
-                            <label class="form-check-label" for="checkParkingBrakeSetCheckbox">Check Parking brake: SET</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="checkGustLockEngagedCheckbox">
-                            <label class="form-check-label" for="checkGustLockEngagedCheckbox">Check GUST LOCK: ENGAGED</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="checkpwrLever12GroundIdleCheckbox">
-                            <label class="form-check-label" for="checkpwrLever12GroundIdleCheckbox">Check Power lever 1&2: GROUND IDLE</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="checkConditionLevers12FuelSoCheckbox">
-                            <label class="form-check-label" for="checkConditionLevers12FuelSoCheckbox">Check Condition levers 1&2: FUEL SO</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="checkFlaps0Checkbox">
-                            <label class="form-check-label" for="checkFlaps0Checkbox">Check Flaps: 0</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/levers.png" class="img-fluid" alt="LEVERS">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="weatherRadarSbyCheckbox">
-                            <label class="form-check-label" for="weatherRadarSbyCheckbox">Set WEATHER RADAR: SBY</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="weatherTilt15Checkbox">
-                            <label class="form-check-label" for="weatherTilt15Checkbox">Set WEATHER TILT: + 15 degrees</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/weather_tilt.png" class="img-fluid" alt="WEATHER TILT">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="pwrMgtToCheckbox">
-                        <label class="form-check-label" for="pwrMgtToCheckbox">Set PWR MGT: TO</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/pwr_mgt.png" class="img-fluid" alt="PWR MGT">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="landingElevCheckbox">
-                        <label class="form-check-label" for="landingElevCheckbox">Set LANDING ELEV: AS REQUIRED</label>
-                      </div>
-                      <div class="col-md-6">
-                        <p>
-                          <img src="../assets/img/cabin_press.png" class="img-fluid" alt="CABIN PRESS">
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div class="col-md-2">
+            <nav id="toc" data-toggle="toc"></nav>
           </div>
         </div>
       </div>
@@ -801,7 +809,9 @@
       <i class="bi bi-arrow-up"></i>
     </button>
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
     <script src="../assets/javascript/dark-mode-toggle.js"></script>
     <script src="../assets/javascript/back-to-top.js"></script>
   </body>
