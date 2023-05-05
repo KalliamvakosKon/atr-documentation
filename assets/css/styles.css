@@ -12,6 +12,16 @@
     color: #ffffff;
   }
 
+  #toc ul li a.active {
+    color: #526cfe;
+    border-left-color: #526cfe;
+  }
+
+  #toc ul li a:hover {
+    color: #526cfe;
+    border-left-color: #526cfe;
+  }
+
   .accordion-button::after {
     background-image: url(../img/chevron-up.svg);
   }
