@@ -36,6 +36,17 @@ body {
   padding-bottom: 70px;
 }
 
+.bi {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  fill: currentcolor;
+}
+
+.dropdown-menu .active .bi {
+  display: block !important;
+}
+
 .accordion {
   margin-bottom: 10px;
 }
