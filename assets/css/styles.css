@@ -1,3 +1,26 @@
+[data-bs-theme="dark"] {
+  --bs-body-bg: #171e2c;
+
+  .accordion-button {
+    --bs-accordion-btn-bg: #3a3c4e;
+    --bs-accordion-active-bg: #3a3c4e;
+    --bs-accordion-active-color: #ffffff;
+    --bs-accordion-btn-color: #ffffff;
+  }
+
+  #toc ul li a {
+    color: #ffffff;
+  }
+
+  .accordion-button::after {
+    background-image: url(../img/chevron-up.svg);
+  }
+
+  .list-group-item {
+    --bs-list-group-color: #ffffff;
+  }
+}
+
 body {
   padding-top: 70px;
   padding-bottom: 70px;
