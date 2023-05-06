@@ -129,266 +129,537 @@
                         </div>
                       </li>
                       <li class="list-group-item">
-                        <div class="row align-items-center">
-                          <div class="col-md-6">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="mcduMenu02Checkbox">
-                                <label class="form-check-label" for="mcduMenu02Checkbox">Select POS INIT</label>
+                        <div class="accordion" id="fuelPumpsTestAccordion">
+                          <div class="accordion-item">
+                            <h3 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#posInitAccordionCollapse" aria-controls="collapseOne">
+                                Position initialization
+                              </button>
+                            </h3>
+                            <div id="posInitAccordionCollapse" class="accordion-collapse collapse show" data-bs-parent="#posInitAccordion">
+                              <div class="accordion-body">
+                                <ul class="list-group">
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduMenu02Checkbox">
+                                            <label class="form-check-label" for="mcduMenu02Checkbox">Select POS INIT</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduPosInit01Checkbox">
+                                            <label class="form-check-label" for="mcduPosInit01Checkbox">Select GPS POS</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduPosInit02Checkbox">
+                                            <label class="form-check-label" for="mcduPosInit02Checkbox">Enter in INIT POS</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduPosInit03Checkbox">
+                                            <label class="form-check-label" for="mcduPosInit03Checkbox">Select SENSORS INIT</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_menu.png" class="img-fluid" alt="MCDU: Menu">
+                                        </p>
+                                        <p>
+                                          <img src="../assets/img/mcdu_pos_init.png" class="img-fluid" alt="MCDU: POS INIT">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
                               </div>
                             </div>
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="mcduPosInit01Checkbox">
-                                <label class="form-check-label" for="mcduPosInit01Checkbox">Select GPS POS</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="mcduPosInit02Checkbox">
-                                <label class="form-check-label" for="mcduPosInit02Checkbox">Enter in INIT POS</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="mcduPosInit03Checkbox">
-                                <label class="form-check-label" for="mcduPosInit03Checkbox">Select SENSORS INIT</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <p>
-                              <img src="../assets/img/mcdu_menu.png" class="img-fluid" alt="MCDU: Menu">
-                            </p>
-                            <p>
-                              <img src="../assets/img/mcdu_pos_init.png" class="img-fluid" alt="MCDU: POS INIT">
-                            </p>
                           </div>
                         </div>
                       </li>
                       <li class="list-group-item">
-                        <div class="row align-items-center">
-                          <div class="col-md-6">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="mcduFplnInitCheckbox">
-                                <label class="form-check-label" for="mcduFplnInitCheckbox">Select FPLN INIT</label>
+                        <div class="accordion" id="fuelPumpsTestAccordion">
+                          <div class="accordion-item">
+                            <h3 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#fplnAccordionCollapse" aria-controls="collapseOne">
+                                Flight plan set-up
+                              </button>
+                            </h3>
+                            <div id="fplnAccordionCollapse" class="accordion-collapse collapse show" data-bs-parent="#fplnAccordion">
+                              <div class="accordion-body">
+                                <ul class="list-group">
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduFplnInitCheckbox">
+                                            <label class="form-check-label" for="mcduFplnInitCheckbox">Select FPLN INIT</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduFplnRouteCheckbox">
+                                            <label class="form-check-label" for="mcduFplnRouteCheckbox">Select ROUTE</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_menu.png" class="img-fluid" alt="MCDU: Menu">
+                                        </p>
+                                        <p>
+                                          <img src="../assets/img/mcdu_fpln_init.png" class="img-fluid" alt="MCDU: FPLN INIT">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltIdCheckbox">
+                                            <label class="form-check-label" for="mcduFltIdCheckbox">Enter FLT ID</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_flt_id.png" class="img-fluid" alt="MCDU: FLT ID">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltFromToCheckbox">
+                                            <label class="form-check-label" for="mcduFltFromToCheckbox">Enter FROM/TO</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduExec01Checkbox">
+                                            <label class="form-check-label" for="mcduExec01Checkbox">Press EXEC</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_from_to.png" class="img-fluid" alt="MCDU: FROM/TO">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltDepartureCheckbox">
+                                            <label class="form-check-label" for="mcduFltDepartureCheckbox">Select departure</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_fpln_01.png" class="img-fluid" alt="MCDU: FPLN">
+                                        </p>
+                                        <p>
+                                          <img src="../assets/img/mcdu_departure.png" class="img-fluid" alt="MCDU: Departure">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltDepartureRunwayCheckbox">
+                                            <label class="form-check-label" for="mcduFltDepartureRunwayCheckbox">Select departure runway</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_departure_runway.png" class="img-fluid" alt="MCDU: Departure runway">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltSidCheckbox">
+                                            <label class="form-check-label" for="mcduFltSidCheckbox">Select SID</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduExec02Checkbox">
+                                            <label class="form-check-label" for="mcduExec02Checkbox">Press EXEC</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_departure_sid.png" class="img-fluid" alt="MCDU: SID">
+                                        </p>
+                                        <p>
+                                          <img src="../assets/img/mcdu_fpln_02.png" class="img-fluid" alt="MCDU: FPLN">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltarrivalCheckbox">
+                                            <label class="form-check-label" for="mcduFltarrivalCheckbox">Select arrival</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_fpln_03.png" class="img-fluid" alt="MCDU: FPLN">
+                                        </p>
+                                        <p>
+                                          <img src="../assets/img/mcdu_arrival.png" class="img-fluid" alt="MCDU: Arrival">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltArrivalRunwayCheckbox">
+                                            <label class="form-check-label" for="mcduFltArrivalRunwayCheckbox">Select arrival runway</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_arrival_runway.png" class="img-fluid" alt="MCDU: Arrival runway">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltStarCheckbox">
+                                            <label class="form-check-label" for="mcduFltStarCheckbox">Select STAR</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduExec03Checkbox">
+                                            <label class="form-check-label" for="mcduExec03Checkbox">Press EXEC</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_arrival_star.png" class="img-fluid" alt="MCDU: STAR">
+                                        </p>
+                                        <p>
+                                          <img src="../assets/img/mcdu_fpln_04.png" class="img-fluid" alt="MCDU: FPLN">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-12">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="mcduRemoveFplnDiscCheckbox">
+                                        <label class="form-check-label" for="mcduRemoveFplnDiscCheckbox">Remove FPLN DISCONTINUITY</label>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduAddWaypointsCheckbox">
+                                            <label class="form-check-label" for="mcduAddWaypointsCheckbox">Add remaining waypoints</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduExec04Checkbox">
+                                            <label class="form-check-label" for="mcduExec04Checkbox">Press EXEC</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_waypoints.png" class="img-fluid" alt="MCDU: STAR">
+                                        </p>
+                                        <p>
+                                          <img src="../assets/img/mcdu_fpln_05.png" class="img-fluid" alt="MCDU: FPLN">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
                               </div>
                             </div>
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="mcduFplnRouteCheckbox">
-                                <label class="form-check-label" for="mcduFplnRouteCheckbox">Select ROUTE</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <p>
-                              <img src="../assets/img/mcdu_menu.png" class="img-fluid" alt="MCDU: Menu">
-                            </p>
-                            <p>
-                              <img src="../assets/img/mcdu_fpln_init.png" class="img-fluid" alt="MCDU: FPLN INIT">
-                            </p>
                           </div>
                         </div>
                       </li>
                       <li class="list-group-item">
-                        <div class="row align-items-center">
-                          <div class="col-md-6">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltIdCheckbox">
-                                <label class="form-check-label" for="mcduFltIdCheckbox">Enter FLT ID</label>
+                        <div class="accordion" id="fuelPumpsTestAccordion">
+                          <div class="accordion-item">
+                            <h3 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#fplnAccordionCollapse" aria-controls="collapseOne">
+                                Performance set-up
+                              </button>
+                            </h3>
+                            <div id="fplnAccordionCollapse" class="accordion-collapse collapse show" data-bs-parent="#fplnAccordion">
+                              <div class="accordion-body">
+                                <ul class="list-group">
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduPerfInitCheckbox">
+                                            <label class="form-check-label" for="mcduPerfInitCheckbox">Select PERF INIT</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_menu.png" class="img-fluid" alt="MCDU: Menu">
+                                        </p>
+                                        <p>
+                                          <img src="" class="img-fluid" alt="">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltIdCheckbox">
+                                            <label class="form-check-label" for="mcduFltIdCheckbox">Enter FLT ID</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_flt_id.png" class="img-fluid" alt="MCDU: FLT ID">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltFromToCheckbox">
+                                            <label class="form-check-label" for="mcduFltFromToCheckbox">Enter FROM/TO</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduExec01Checkbox">
+                                            <label class="form-check-label" for="mcduExec01Checkbox">Press EXEC</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_from_to.png" class="img-fluid" alt="MCDU: FROM/TO">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltDepartureCheckbox">
+                                            <label class="form-check-label" for="mcduFltDepartureCheckbox">Select departure</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_fpln_01.png" class="img-fluid" alt="MCDU: FPLN">
+                                        </p>
+                                        <p>
+                                          <img src="../assets/img/mcdu_departure.png" class="img-fluid" alt="MCDU: Departure">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltDepartureRunwayCheckbox">
+                                            <label class="form-check-label" for="mcduFltDepartureRunwayCheckbox">Select departure runway</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_departure_runway.png" class="img-fluid" alt="MCDU: Departure runway">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltSidCheckbox">
+                                            <label class="form-check-label" for="mcduFltSidCheckbox">Select SID</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduExec02Checkbox">
+                                            <label class="form-check-label" for="mcduExec02Checkbox">Press EXEC</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_departure_sid.png" class="img-fluid" alt="MCDU: SID">
+                                        </p>
+                                        <p>
+                                          <img src="../assets/img/mcdu_fpln_02.png" class="img-fluid" alt="MCDU: FPLN">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltarrivalCheckbox">
+                                            <label class="form-check-label" for="mcduFltarrivalCheckbox">Select arrival</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_fpln_03.png" class="img-fluid" alt="MCDU: FPLN">
+                                        </p>
+                                        <p>
+                                          <img src="../assets/img/mcdu_arrival.png" class="img-fluid" alt="MCDU: Arrival">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltArrivalRunwayCheckbox">
+                                            <label class="form-check-label" for="mcduFltArrivalRunwayCheckbox">Select arrival runway</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_arrival_runway.png" class="img-fluid" alt="MCDU: Arrival runway">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltStarCheckbox">
+                                            <label class="form-check-label" for="mcduFltStarCheckbox">Select STAR</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduExec03Checkbox">
+                                            <label class="form-check-label" for="mcduExec03Checkbox">Press EXEC</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_arrival_star.png" class="img-fluid" alt="MCDU: STAR">
+                                        </p>
+                                        <p>
+                                          <img src="../assets/img/mcdu_fpln_04.png" class="img-fluid" alt="MCDU: FPLN">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-12">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="mcduRemoveFplnDiscCheckbox">
+                                        <label class="form-check-label" for="mcduRemoveFplnDiscCheckbox">Remove FPLN DISCONTINUITY</label>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduAddWaypointsCheckbox">
+                                            <label class="form-check-label" for="mcduAddWaypointsCheckbox">Add remaining waypoints</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduExec04Checkbox">
+                                            <label class="form-check-label" for="mcduExec04Checkbox">Press EXEC</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/mcdu_waypoints.png" class="img-fluid" alt="MCDU: STAR">
+                                        </p>
+                                        <p>
+                                          <img src="../assets/img/mcdu_fpln_05.png" class="img-fluid" alt="MCDU: FPLN">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
                               </div>
                             </div>
-                          </div>
-                          <div class="col-md-6">
-                            <p>
-                              <img src="../assets/img/mcdu_flt_id.png" class="img-fluid" alt="MCDU: FLT ID">
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item">
-                        <div class="row align-items-center">
-                          <div class="col-md-6">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltFromToCheckbox">
-                                <label class="form-check-label" for="mcduFltFromToCheckbox">Enter FROM/TO</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="mcduExec01Checkbox">
-                                <label class="form-check-label" for="mcduExec01Checkbox">Press EXEC</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <p>
-                              <img src="../assets/img/mcdu_from_to.png" class="img-fluid" alt="MCDU: FROM/TO">
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item">
-                        <div class="row align-items-center">
-                          <div class="col-md-6">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltDepartureCheckbox">
-                                <label class="form-check-label" for="mcduFltDepartureCheckbox">Select departure</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <p>
-                              <img src="../assets/img/mcdu_fpln_01.png" class="img-fluid" alt="MCDU: FPLN">
-                            </p>
-                            <p>
-                              <img src="../assets/img/mcdu_departure.png" class="img-fluid" alt="MCDU: Departure">
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item">
-                        <div class="row align-items-center">
-                          <div class="col-md-6">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltDepartureRunwayCheckbox">
-                                <label class="form-check-label" for="mcduFltDepartureRunwayCheckbox">Select departure runway</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <p>
-                              <img src="../assets/img/mcdu_departure_runway.png" class="img-fluid" alt="MCDU: Departure runway">
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item">
-                        <div class="row align-items-center">
-                          <div class="col-md-6">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltSidCheckbox">
-                                <label class="form-check-label" for="mcduFltSidCheckbox">Select SID</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="mcduExec02Checkbox">
-                                <label class="form-check-label" for="mcduExec02Checkbox">Press EXEC</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <p>
-                              <img src="../assets/img/mcdu_departure_sid.png" class="img-fluid" alt="MCDU: SID">
-                            </p>
-                            <p>
-                              <img src="../assets/img/mcdu_fpln_02.png" class="img-fluid" alt="MCDU: FPLN">
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item">
-                        <div class="row align-items-center">
-                          <div class="col-md-6">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltarrivalCheckbox">
-                                <label class="form-check-label" for="mcduFltarrivalCheckbox">Select arrival</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <p>
-                              <img src="../assets/img/mcdu_fpln_03.png" class="img-fluid" alt="MCDU: FPLN">
-                            </p>
-                            <p>
-                              <img src="../assets/img/mcdu_arrival.png" class="img-fluid" alt="MCDU: Arrival">
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item">
-                        <div class="row align-items-center">
-                          <div class="col-md-6">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltArrivalRunwayCheckbox">
-                                <label class="form-check-label" for="mcduFltArrivalRunwayCheckbox">Select arrival runway</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <p>
-                              <img src="../assets/img/mcdu_arrival_runway.png" class="img-fluid" alt="MCDU: Arrival runway">
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item">
-                        <div class="row align-items-center">
-                          <div class="col-md-6">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="mcduFltStarCheckbox">
-                                <label class="form-check-label" for="mcduFltStarCheckbox">Select STAR</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="mcduExec03Checkbox">
-                                <label class="form-check-label" for="mcduExec03Checkbox">Press EXEC</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <p>
-                              <img src="../assets/img/mcdu_arrival_star.png" class="img-fluid" alt="MCDU: STAR">
-                            </p>
-                            <p>
-                              <img src="../assets/img/mcdu_fpln_04.png" class="img-fluid" alt="MCDU: FPLN">
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item">
-                        <div class="row align-items-center">
-                          <div class="col-md-12">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="mcduRemoveFplnDiscCheckbox">
-                            <label class="form-check-label" for="mcduRemoveFplnDiscCheckbox">Remove FPLN DISCONTINUITY</label>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item">
-                        <div class="row align-items-center">
-                          <div class="col-md-6">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="mcduAddWaypointsCheckbox">
-                                <label class="form-check-label" for="mcduAddWaypointsCheckbox">Add remaining waypoints</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="mcduExec04Checkbox">
-                                <label class="form-check-label" for="mcduExec04Checkbox">Press EXEC</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <p>
-                              <img src="../assets/img/mcdu_waypoints.png" class="img-fluid" alt="MCDU: STAR">
-                            </p>
-                            <p>
-                              <img src="../assets/img/mcdu_fpln_05.png" class="img-fluid" alt="MCDU: FPLN">
-                            </p>
                           </div>
                         </div>
                       </li>
