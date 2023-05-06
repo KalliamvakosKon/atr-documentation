@@ -320,3 +320,4 @@ Shut down
 5. Taxi
 6. Set SPEED auto
 7. Perform take off test
+8. TICAS
