@@ -225,6 +225,31 @@ date: 2023-01-05
 32. Enter TRANS ALT
 33. Enter QNH
 
+Before rotation
+
+Engine start
+
+Before taxi
+
+Taxi
+
+Before take off
+
+After take off
+
+Descent
+
+Approach
+
+Before landing
+
+After landing
+
+Parking
+
+Shut down
+
+
 ## Departure Briefing
 
 ![NAV SOURCE](img/fgcp.png)
