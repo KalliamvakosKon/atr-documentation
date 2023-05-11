@@ -109,78 +109,103 @@
                         </div>
                       </li>
                       <li class="list-group-item">
-                        <div class="row align-items-center">
-                          <div class="col-md-6">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="eng02PumpRunCheckbox">
-                                <label class="form-check-label" for="eng02PumpRunCheckbox">Set ENG 2 PUMP: RUN</label>
+                        <div class="accordion" id="eng2StartAccordion">
+                          <div class="accordion-item">
+                            <h3 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#eng2StartAccordionCollapse" aria-controls="collapseOne">
+                                Engine 2 Start Sequence
+                              </button>
+                            </h3>
+                            <div id="eng2StartAccordionCollapse" class="accordion-collapse collapse show" data-bs-parent="#eng2StartAccordionCollapse">
+                              <div class="accordion-body">
+                                <ul class="list-group">
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="eng02PumpRunCheckbox">
+                                            <label class="form-check-label" for="eng02PumpRunCheckbox">Set ENG 2 PUMP: RUN</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/eng2_pump.png" class="img-fluid" alt="ENG2 PUMP">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="openPropBreakGuardCheckbox">
+                                            <label class="form-check-label" for="openPropBreakGuardCheckbox">Open PROP BRAKE guard</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="propBrakeOnCheckbox">
+                                            <label class="form-check-label" for="propBrakeOnCheckbox">Set PROP BRAKE: ON</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="closePropBreakGuardCheckbox">
+                                            <label class="form-check-label" for="closePropBreakGuardCheckbox">Close PROP BRAKE guard</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <p>
+                                          <img src="../assets/img/prop_brake_on.png" class="img-fluid" alt="PROP BRAKE">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-12">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="engStartABCheckbox">
+                                        <label class="form-check-label" for="engStartABCheckbox">Set ENG START: START A/ START B/ START A&B</label>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-12">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="start2OnCheckbox">
+                                        <label class="form-check-label" for="start2OnCheckbox">Set START 2: ON</label>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-12">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="eng2Nh10Checkbox">
+                                        <label class="form-check-label" for="eng2Nh10Checkbox">Wait for ENGINE 2 NH% > 10%</label>
+                                      </div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                      <div class="col-md-12">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="condLvr2FtrCheckbox">
+                                        <label class="form-check-label" for="condLvr2FtrCheckbox">Set CONDITION LEVER 2: FTR</label>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                      <div class="col-md-12">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="engStartOffCheckbox">
+                                        <label class="form-check-label" for="engStartOffCheckbox">Set ENG START: OFF</label>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
                               </div>
                             </div>
-                          </div>
-                          <div class="col-md-6">
-                            <p>
-                              <img src="../assets/img/eng2_pump.png" class="img-fluid" alt="ENG2 PUMP">
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item">
-                        <div class="row align-items-center">
-                          <div class="col-md-6">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="openPropBreakGuardCheckbox">
-                                <label class="form-check-label" for="openPropBreakGuardCheckbox">Open PROP BRAKE guard</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="propBrakeOnCheckbox">
-                                <label class="form-check-label" for="propBrakeOnCheckbox">Set PROP BRAKE: ON</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="closePropBreakGuardCheckbox">
-                                <label class="form-check-label" for="closePropBreakGuardCheckbox">Close PROP BRAKE guard</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="engStartABCheckbox">
-                                <label class="form-check-label" for="engStartABCheckbox">Set ENG START: START A/ START B/ START A&B</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="start2OnCheckbox">
-                                <label class="form-check-label" for="start2OnCheckbox">Set START 2: ON</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="eng2Nh10Checkbox">
-                                <label class="form-check-label" for="eng2Nh10Checkbox">Wait for ENGINE 2 NH% > 10%</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="condLvr2FtrCheckbox">
-                                <label class="form-check-label" for="condLvr2FtrCheckbox">Set CONDITION LEVER 2: FTR</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="engStartOffCheckbox">
-                                <label class="form-check-label" for="engStartOffCheckbox">Set ENG START: OFF</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <p>
-                              <img src="../assets/img/prop_brake_on.png" class="img-fluid" alt="PROP BRAKE">
-                            </p>
                           </div>
                         </div>
                       </li>
