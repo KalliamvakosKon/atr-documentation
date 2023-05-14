@@ -57,6 +57,10 @@ nav[data-toggle="toc"] {
 	align-self: start;
 }
 
+nav[data-toggle='toc'] .nav .nav {
+  display: block;
+}
+
 @media (max-width: 768px) {
   .row {
     flex-direction: column-reverse;
