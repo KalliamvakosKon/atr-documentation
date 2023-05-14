@@ -30,58 +30,61 @@
     <div>
       <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand mb-0 h1">
+          <a class="navbar-brand mb-0 h1" href="../index.html">
             <img src="../assets/img/logo_red_no_bg.svg" alt="Logo" width="80" height="30" class="d-inline-block align-text-top">
             42/72-600 Documentation
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Cold & Dark</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="pre-flight.html">Pre-Flight</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="before-rotation.html">Before Rotation</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="engine-rotation.html">Engine Rotation</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="before-taxi.html">Before Taxi</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
-              <li class="nav-item dropdown">
-                <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (auto)">
-                  <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
-                  <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
-                  <li>
-                    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
-                      <svg class="bi me-2 opacity-50 theme-icon"><use href="#sun-fill"></use></svg>
-                      Light
-                      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                    </button>
-                  </li>
-                  <li>
-                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                      <svg class="bi me-2 opacity-50 theme-icon"><use href="#moon-stars-fill"></use></svg>
-                      Dark
-                      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                    </button>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Cold and Dark</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Cold & Dark</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="pre-flight.html">Pre-Flight</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="before-rotation.html">Before Rotation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="engine-rotation.html">Engine Rotation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="before-taxi.html">Before Taxi</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+                <li class="nav-item dropdown">
+                  <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (auto)">
+                    <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
+                    <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                    <li>
+                      <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
+                        <svg class="bi me-2 opacity-50 theme-icon"><use href="#sun-fill"></use></svg>
+                        Light
+                        <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                        <svg class="bi me-2 opacity-50 theme-icon"><use href="#moon-stars-fill"></use></svg>
+                        Dark
+                        <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
