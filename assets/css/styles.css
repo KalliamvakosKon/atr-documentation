@@ -8,6 +8,19 @@
     --bs-accordion-btn-color: #ffffff;
   }
 
+  .btn {
+    --bs-btn-bg: #3a3c4e;
+    --bs-btn-active-bg: #3a3c4e;
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-btn-color: #ffffff;
+    --bs-btn-border-color: none;
+  }
+
+  .btn:hover {
+    border-color: #3a3c4e;
+    background-color: #3a3c4e;
+  }
+
   #toc ul li a {
     color: #ffffff;
   }
@@ -53,6 +66,21 @@ body {
 
 .navbar-toggler:focus {
   box-shadow: none;
+}
+
+#introCarousel, .carousel-inner, .carousel-item, .carousel-item.active {
+  height: 60vh;
+}
+
+.carousel-item {
+  background-image: url('../img/ATR-100151_MD.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.px-3 {
+  text-align: center !important;
 }
 
 .accordion {
